@@ -1,0 +1,61 @@
+1.Working of read() mode
+
+# Python code to read() mode 
+file = open("file.text", "r") 
+print file.read() 
+
+2.print every line one by one in the file
+
+# This will print every line one by one in the file  
+file = open('geek.txt', 'r') 
+for each in file: 
+	print (each)
+
+3. Python code to read() mode character wise 
+
+# Python code to illustrate read() mode character wise 
+file = open("file.txt", "r") 
+print (file.read(5)) 
+ 
+
+4. Python code to create a file and write
+
+# Python code to create a file 
+file = open('Saleem.txt','w') 
+file.write("Welcome all\n") 
+file.write("Your limitation—it’s only your imagination") 
+file.close() 
+
+5.Python code to for append() mode
+
+# Python code to illustrate append() mode 
+file = open('Saleem.txt','a') 
+file.write("Good, better, best")
+file.close() 
+
+6. Python code to illustrate with() alongwith write() 
+
+# Python code to illustrate with() alongwith write() 
+with open("Saleem.txt", "w") as f:
+    f.write("Hello World!!!") 
+
+
+7.Python code to split() function 
+
+# Python code to illustrate split() function 
+with open("Saleem.txt", "r") as file: 
+    data = file.readlines() 
+    for line in data:
+        word = line.split() 
+        print (word) 
+
+
+8.Python program to reverse the content of a file and store it in another file
+
+f=open("Saleem.txt","w")
+with open("geek.txt","r") as myfile:
+    data=myfile.read()
+data1=data[::-1]
+f.write(data1)
+f.close()
+
